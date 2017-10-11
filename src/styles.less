@@ -1,0 +1,54 @@
+@import "../node_modules/bootstrap/less/variables.less";
+@import "../src/themeStyle/fonts.less";
+@import "../src/themeStyle/colorPalette.less";
+@import "../src/themeStyle/variable.less";
+//------- modules 
+@import "../src/themeStyle/Menu/topMenu.less";
+// @import "" Stopka
+// @import "" Carusel
+//-------
+
+body {
+    background-color: @footerBackgroundColor;
+}
+
+a{
+    text-decoration: none;
+}
+
+.subBody{
+    background-color: @subBodyBackgroundColor;
+
+    @media(min-width:@screen-xsm-min) and (max-width:@screen-sm-min){
+        min-height: 100px;
+    }
+
+    @media (min-width: @screen-sm-min) {  
+        min-height: 300px;
+    }
+    @media (min-width: @screen-md-min) {  
+        min-height: 400px;
+    }
+    @media (min-width: @screen-lg-min) { 
+        min-height: 600px;
+    }
+}
+
+.img-responsive {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+//---carusel
+
+.carousel-control.left{
+    background-image: none;
+}
+.carousel-control.right{
+    background-image: none;
+}
+.img-carusel{
+    margin-left:0px;
+    margin-right:0px;
+    width: 100%;
+}
